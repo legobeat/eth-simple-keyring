@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.1.0]
+### Changed
+- Export TypeScript interfaces ([#140](https://github.com/MetaMask/eth-simple-keyring/pull/140))
+- Update all dependencies ([#140](https://github.com/MetaMask/eth-simple-keyring/pull/140)) ([#149](https://github.com/MetaMask/eth-simple-keyring/pull/149)) ([#155](https://github.com/MetaMask/eth-simple-keyring/pull/155))
+
+### Fixed
+- Add `validateMessage` option to `signMessage` to configure if runtime-validation that input string is hex should be done (default: `true`) ([#148](https://github.com/MetaMask/eth-simple-keyring/pull/148))
+  - This fixes a previous issue where the behavior would depend on unspecified dependency behavior.
+
 ## [5.0.0]
 ### Changed
 - **BREAKING:** Makes version-specific `signTypedData` methods private ([#84](https://github.com/MetaMask/eth-simple-keyring/pull/84))
@@ -21,5 +30,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **BREAKING:** Remove redundant `newGethSignMessage` method ([#72](https://github.com/MetaMask/eth-simple-keyring/pull/72))
     - Consumers can use `signPersonalMessage` method as a replacement for `newGethSignMessage`.
 
-[Unreleased]: https://github.com/MetaMask/eth-simple-keyring/compare/v5.0.0...HEAD
+[Unreleased]: https://github.com/MetaMask/eth-simple-keyring/compare/v5.1.0...HEAD
+[5.1.0]: https://github.com/MetaMask/eth-simple-keyring/compare/v5.0.0...v5.1.0
 [5.0.0]: https://github.com/MetaMask/eth-simple-keyring/releases/tag/v5.0.0
