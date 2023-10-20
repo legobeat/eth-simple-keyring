@@ -22,7 +22,7 @@
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
     "build:clean": "rimraf dist && yarn build",
-    "build:docs": "typedoc",
+    "build:docs": "yarn typedoc",
     "lint": "yarn lint:eslint && yarn lint:misc --check && yarn lint:dependencies",
     "lint:dependencies": "depcheck",
     "lint:eslint": "eslint . --cache --ext js,ts",
